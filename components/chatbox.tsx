@@ -49,7 +49,7 @@ function Chatbot(props: any) {
         }])
         
         data = {
-            msgs: messages
+        msgs: messages
         };
         fetch("/api/msgs", {
         method: 'POST',

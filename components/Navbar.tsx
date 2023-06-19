@@ -1,4 +1,6 @@
 'use client';
+import Link from "next/link";
+
 
 function NavBar() {
 
@@ -6,10 +8,10 @@ function NavBar() {
     <header>
     <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1 text-gray-900">
-          <a href='/'>
+          <Link href='/'>
             CS
             {/* <Image src="/BB_icon.png" alt="" width={50} height={50} /> */}
-          </a>
+          </Link>
       </div>
       <div className="hidden lg:flex lg:gap-x-20">
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700">
