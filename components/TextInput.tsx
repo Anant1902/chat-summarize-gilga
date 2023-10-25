@@ -51,9 +51,6 @@ function TextInput() {
             className="btn btn-primary bg-green-700 p-3 rounded-lg hover:bg-green-900">Submit</Link>
             </div>
         </form>
-        {/* <div className="bg-white w-3/4 rounded p-4">
-            <div className="text-1xl italic"> {shortenedPara} </div>
-        </div> */}
         </div>
 
     )

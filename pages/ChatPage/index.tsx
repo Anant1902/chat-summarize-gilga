@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useSearchParams } from 'next/navigation';
 import Chatbot from "@/components/chatbox";
+import Link from "next/link";
 
 export default function Home() {
     const searchParams = useSearchParams();
@@ -41,7 +42,12 @@ export default function Home() {
     }
   return (
     <div>
-      <h1 className=" mx-auto text-3xl text-yellow-50 font-bold pb-5"> Text inputted:</h1>
+      <Link className='text-2xl font-semibold' href={{
+        pathname:'./'
+        }}
+        > Chat Summarize
+      </Link>
+      <h1 className=" mx-auto text-3xl text-yellow-50 font-bold pt-20 pb-5"> Text inputted:</h1>
       <div className="italic text-black pb-4">
         {para}
         </div>
